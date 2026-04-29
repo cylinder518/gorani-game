@@ -7,14 +7,14 @@
     <h1>고라니 키우기</h1>
     <p id="status">배고픔: 50 | 행복 50</p>
     <button onclick="feed(아스파라거스)">아스파라거스</button>
-    <button onclick="feed(치킨)">아스파라거스</button>
-    <button onclick="shower()">아스파라거스</button>
+    <button onclick="feed(치킨)">치킨</button>
+    <button onclick="shower()">샤워</button>
   <script>
     let hunger=50;
     let happy=50;
     function update(){
       document.getElementByld("status").innerText=
-        "배고픔:"+hunger+" | 행복:"+happy;
+        "배고픔: "+hunger+" | 행복: "+happy;
     }
     function feed(food){
       hunger-=10;
