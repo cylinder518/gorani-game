@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>고라니 게임</title>
+  </head>
+  <body style="text-align:center;font-family:sans-serif;">
+    <h1>고라니 키우기</h1>
+    <p id="status">배고픔: 50 | 행복 50</p>
+    <button onclick="feed(아스파라거스)">아스파라거스</button>
+    <button onclick="feed(치킨)">아스파라거스</button>
+    <button onclick="shower()">아스파라거스</button>
+  <script>
+    let hunger=50;
+    let happy=50;
+    function update(){
+      document.getElementByld("status").innerText=
+        "배고픔:"+hunger+" | 행복:"+happy;
+    }
+    function feed(food){
+      hunger-=10;
+      happy+=5;
+      update();
+      alert(food+" 맛있어");
+    }
+    function shower(){
+      happy+=10;
+      update();
+      alert("깨끗해졌어")
+    }  
+  </script>
+</html>
