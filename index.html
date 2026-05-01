@@ -4,10 +4,11 @@
     <title>고라니 게임</title>
   </head>
   <body style="text-align:center;font-family:sans-serif;">
-    <h1>고라니 키우기</h1>
+    <h1>(유행을 잘 따라가는) 고라니 키우기</h1>
     <p id="status">배고픔: 50 | 행복: 50</p>
-    <button onclick="feed('아스파라거스')">아스파라거스</button>
-    <button onclick="feed('치킨')">치킨</button>
+    <button onclick="feed('아스파라거스')">봄동비빔밥</button>
+    <button onclick="feed('두쫀쿠')">두쫀쿠</button>
+    <button onclick="feed('치킨')">버터떡</button>
     <button onclick="shower()">샤워</button>
   <script>
     let hunger=50;
@@ -20,12 +21,12 @@
       hunger-=10;
       happy+=5;
       update();
-      alert(food+" 맛있어");
+      alert(food+" 맛있어 yar");
     }
     function shower(){
       happy+=10;
       update();
-      alert("깨끗해졌어")
+      alert("난 물이 좋아~");
     }  
   </script>
   </body>
